@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>API</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Updated: Nov 17 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">DevFolio</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="./index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="./java.html">Java</a></li>
+          <li><a class="nav-link scrollto" href="./api.html">API</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/p1.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4">I'm Natthawat Pomsuwan</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Developer"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Hero Section -->
+
+  <main id="main">
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="row">
+                  <h1>API</h1>
+                  <hr>
+                  <div class="col-sm-6 col-md-5">
+                    <h2>Basic API 1: Cat Facts</h2>
+                    <p id="demo1"></p>
+                    <button onclick="myFunction1()" class="button button-a button-rouded">Click me</button>
+                    <hr>
+
+                    <h2>Basic API 2: Bored</h2>
+                    <p id="demo2"></p>
+                    <button onclick="myFunction2()" class="button button-a button-rouded">Click me</button>
+                    <hr>
+
+                    <h2>API Paramiter: Genderize.io</h2>
+                    <div class="col-md-12 mb-3">
+                      <input type="text" id="name" class="form-control" placeholder="Enter a name" required>
+                    </div>
+                    <p id="result"></p>
+                    <button onclick="fetchGenderize()" class="button button-a button-rouded">Get Gender</button>
+                    <hr>
+
+                    <h2>Send email to google sheet</h2>
+                    <form method="POST"
+                      action="https://script.google.com/macros/s/AKfycbyxmy5isowRiMjdYFroUn9DOB5WC-BIZbbDmyNHvvB1SvM1n_V5QFXP3TV4gcvxgPQP/exec">
+                      <div class="col-md-12 mb-3">
+                        <input name="Email" type="email" class="form-control" placeholder="Email" required>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <input name="Name" type="text" class="form-control" placeholder="Name" required>
+                      </div>
+                      <button type="submit" class="button button-a button-rouded">Send</button>
+                    </form>
+                    <hr>
+
+                    <h2>Crypto</h2>
+                    <div id="lastUpdateTime"></div>
+                    <div id="prices"></div>
+                  </div>
+                  <hr>
+                  <h2>Chart</h2>
+                  <iframe width="615" height="381" seamless="" frameborder="0" scrolling="no"
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQUF8x4PkCRnY8gFvxhvHN0CMqxZLmb2_Lj__jkO1kvD7nKDqs6k0AVKUwRn2xmgI_WluF0G2T8xfkt/pubchart?oid=817584522&amp;format=interactive"></iframe>
+                  <hr>
+
+                  <h2>Google Sheet Data Base</h2>
+                  <iframe width="100%" height="700"
+                    src="https://docs.google.com/spreadsheets/d/1pPcGKb0o1IToDg6hlh2Ner7x1W3wf1RJQD2NrEw4dy0/edit?usp=sharing"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    function myFunction1() {
+      fetch("https://catfact.ninja/fact")
+        .then(function (response) {
+          return response.json()
+        })
+        .then(function (data) {
+          let txt1 = "";
+          for (let x in data) {
+            txt1 += data[x] + " ";
+            document.getElementById("demo1").innerHTML = txt1;
+          };
+
+          return data;
+        })
+    }
+  </script>
+  <script>
+    function myFunction2() {
+      fetch("https://www.boredapi.com/api/activity")
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          let txt2 = "";
+          for (let x in data) {
+            txt2 += data[x] + " ";
+          }
+          document.getElementById("demo2").innerHTML = txt2; // Move this line outside the loop
+          return data;
+        });
+    }
+
+  </script>
+
+
+  <!-- ------------------------------ paramiter ------------------------------ -->
+  <script>
+    function fetchGenderize() {
+      var name = document.getElementById('name').value;
+      // if (name.trim() === "") {
+      //   alert("Please enter a name");
+      //   return;
+      // }
+
+      fetch(`https://api.genderize.io?name=${name}`)
+        .then(response => response.json())
+        .then(data => {
+          displayResult(data);
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+          alert('Error fetching data. Please try again.');
+        });
+    }
+
+    function displayResult(data) {
+      var resultDiv = document.getElementById('result');
+      var genderData = data.gender[0];
+
+      if (genderData) {
+        var genderId = genderData.gender;
+        var probability = (genderData.probability * 100).toFixed(2);
+        resultDiv.innerHTML = `<p>Your most likely country is ${genderId} with a probability of ${probability}%.</p>`;
+      } else {
+        resultDiv.innerHTML = "<p>No data available for the provided name.</p>";
+      }
+    }
+  </script>
+
+  <script>
+    function displayResult(data) {
+      var resultElement = document.getElementById('result');
+
+      if (data.gender) {
+        resultElement.innerHTML = `The gender for the name ${data.name} is ${data.gender}.`;
+      } else {
+        resultElement.innerHTML = 'Gender information not available for the provided name.';
+      }
+    }
+
+  </script>
+
+  <script>
+    function fetchPrices() {
+      var now = new Date();
+      var currentTime = now.toLocaleTimeString();
+
+      fetch('https://api.coinbase.com/v2/exchange-rates?currency=USDT')
+        .then(response => response.json())
+        .then(data => {
+          displayPrices(data);
+          displayLastUpdateTime(currentTime);
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+          alert('Error fetching data. Please try again.');
+        });
+    }
+    function displayPrices(data) {
+      var pricesDiv = document.getElementById('prices');
+      var rates = data.data.rates;
+
+      var currencies = ['BTC', 'ETH', 'GBP'];
+      var pricesHtml = '<p>1 USDT can buy:</p><ul>';
+
+      currencies.forEach(currency => {
+        if (rates[currency]) {
+          pricesHtml += `<li>${currency}: ${rates[currency]}</li>`;
+        } else {
+          pricesHtml += `<li>${currency}: N/A</li>`;
+        }
+      });
+
+      pricesHtml += '</ul>';
+      pricesDiv.innerHTML = pricesHtml;
+    }
+
+    function displayLastUpdateTime(currentTime) {
+      var updateTimeDiv = document.getElementById('lastUpdateTime');
+      updateTimeDiv.innerHTML = `<p>Last Update Time: ${currentTime}</p>`;
+    }
+
+    fetchPrices();
+
+    setInterval(fetchPrices, 1000);
+  </script>
+
+</body>
+
+</html>

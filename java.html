@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Updated: Nov 17 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <link rel="stylesheet" href="./country-by-surface-area.json">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">DevFolio</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="./index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="./java.html">Java</a></li>
+          <li><a class="nav-link scrollto" href="./api.html">API</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/p1.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4">I'm Natthawat Pomsuwan</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Developer"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Hero Section -->
+
+  <main id="main">
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="row">
+                  <h1>The Document Object</h1>
+                  <hr>
+                  <div class="col-sm-6 col-md-5">
+                    <h2>1. Roll</h2>
+                    <p id="demo1"></p>
+                    <button onclick="func1()" class="button button-a button-rouded">Click me</button>
+
+                    <hr>
+                    <h2>2. Cal Point</h2>
+                    <div class="col-md-12 mb-3">
+                      <input id="numb" class="form-control" placeholder="Enter your point">
+                    </div>
+                    <p id="demo2"></p>
+                    <button type="button" onclick="func2()" class="button button-a button-rouded">Submit</button>
+
+                    <hr>
+                    <h2>3. String Check</h2>
+                    <div class="col-md-12 mb-3">
+                      <input id="txt" class="form-control" placeholder="Enter your string">
+                    </div>
+                    <p id="demo3"></p>
+                    <button type="button" onclick="func3()" class="button button-a button-rouded">Submit</button>
+
+                    <hr>
+                    <h2>4. Pythagorean</h2>
+                    <div class="col-md-12 mb-3">
+                      <input id="a1" class="form-control" placeholder="Enter your value A">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <input id="b1" class="form-control" placeholder="Enter your value B">
+                    </div>
+                    <p id="demo4"></p>
+                    <button type="button" onclick="func4()" class="button button-a button-rouded">Submit</button>
+
+                    <hr>
+                    <h2>5. Circle</h2>
+                    <div class="col-md-12 mb-3">
+                      <input id="rad" class="form-control" placeholder="Enter your radius">
+                    </div>
+                    <p id="demo5"></p>
+                    <button type="button" onclick="func5()" class="button button-a button-rouded">Submit</button>
+                    <br>
+                    <br>
+
+                  </div>
+
+                  <hr>
+                  <h2>Bar Chart</h2>
+                  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+                  <hr>
+                  <h2>Average Temperature Chart</h2>
+                  <canvas id="myChart1"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+
+    function func1() {
+      document.getElementById("demo1").innerHTML = Math.floor(Math.random() * 6) + 1;
+    }
+
+    function func2() {
+      let bey = document.getElementById("numb").value;
+      function calPoint(bey) {
+        let point = Math.trunc(bey / 100);
+        document.getElementById("demo2").innerHTML = point;
+      }
+      calPoint(bey);
+    }
+
+    function func3() {
+      let text = document.getElementById("txt").value;
+      function strCheck(text) {
+        const lowercaseText = text.toLowerCase();
+        return (
+          lowercaseText.includes("xxx") ||
+          lowercaseText.includes("sex") ||
+          lowercaseText.includes("porn")
+        );
+      }
+      document.getElementById("demo3").innerHTML = strCheck(text);
+    }
+    function func4() {
+      let a = document.getElementById("a1").value;
+      let b = document.getElementById("b1").value;
+      function pythagorean(a, b) {
+        apow2 = Math.pow(a, 2);
+        bpow2 = Math.pow(b, 2);
+        cpow2 = apow2 + bpow2;
+        result1 = Math.sqrt(cpow2);
+        document.getElementById("demo4").innerHTML = result1;
+      }
+      pythagorean(a, b);
+    }
+    function func5() {
+      let radius = document.getElementById("rad").value;
+      function circle(radius) {
+        result2 = 2 * 3.14159 * radius;
+        document.getElementById("demo5").innerHTML = result2;
+      }
+      circle(radius);
+    }
+  </script>
+
+  <script>
+    const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+    const yValues = [55, 49, 20, 39, 25];
+    const barColors = ["red", "blue", "green", "yellow", "pink"];
+
+    new Chart("myChart", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        legend: { display: false },
+        title: {
+          display: true,
+          text: "World Wine Production 2018"
+        }
+      }
+    });
+
+    // เริ่มโหลดข้อมูล JSON และสร้าง Chart เมื่อโหลดเสร็จสมบูรณ์
+    fetch('country-by-yearly-average-temperature.json')
+      .then(response => response.json())
+      .then(jsonData => {
+        const labels = jsonData.map(entry => entry.country);
+        const densities = jsonData.map(entry => entry.temperature);
+
+        const ctx = document.getElementById('myChart1').getContext('2d');
+
+        const myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'Average Temperature',
+              data: densities,
+              backgroundColor: 'rgba(54, 162, 235, 0.5)',
+              borderColor: 'rgba(54, 162, 235, 1)',
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      });
+  </script>
+</body>
+
+</html>
